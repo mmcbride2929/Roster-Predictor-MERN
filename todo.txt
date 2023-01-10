@@ -1,0 +1,48 @@
+TO FIX
+format the way the final roster and first pages roster is laid out. make it look cleaner
+
+
+
+
+-mongoose.connect error
+- trevor challenge
+
+
+
+
+
+
+
+
+
+
+*** results page
+- copy button  functional
+- incorporate copyTo Clipboard , and format the copy of the roster
+
+*** questions
+when do I keep a function/state in context and when do I keep it within a component
+
+  //why brackets+/*? Stepping into state?
+  // why can i use offense: but have to use dot notation and not just use offense: offense + 1
+  const handleTeamAmount = () => {
+    if (rosterLocked === false) {
+      setRosterLocked(true)
+      finalRoster.forEach((player) => {
+        if (player.team === 'Offense') {
+          setTeamAmount((teamAmount) => ({
+            ...teamAmount,
+            offense: teamAmount.offense + 1,
+          }))
+        }
+
+
+
+        why do functions trigger when a page renders
+        if do not have an empty function ()=> in front of them? even when written without()
+
+- need to work on folder structure, consistent naming conventions with all my heroku/github projects
+
+- also need to work on folder structure with gitignore/env etc
+
+- how to get context to change when user uses keyboard to go back a page or forward
