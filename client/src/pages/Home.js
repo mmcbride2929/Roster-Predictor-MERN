@@ -17,7 +17,9 @@ const Home = () => {
 
   useEffect(() => {
     const fetchRoster = async () => {
-      const response = await axios.get(`http://localhost:5000/api/v1/roster`)
+      const response = await axios.get(
+        `https://roster-predictor-mern-production.up.railway.app/api/v1/roster`
+      )
 
       setAllPlayers(response.data)
       setLoading(false)
